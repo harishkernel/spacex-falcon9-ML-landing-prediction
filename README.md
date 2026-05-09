@@ -3,18 +3,18 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 SpaceX advertises Falcon 9 rocket launches at **$62 million**, compared to competitors who charge over **$165 million**. The key cost advantage is the reusability of the Falcon 9 first stage. This project builds a **binary classification model** to predict first-stage landing success, which directly informs launch cost estimates.
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 Capstone-main/
 │
-├── 📁 Notebook/
+├── Notebook/
 │   ├── Data collect API notebook.ipynb          # SpaceX REST API data collection
 │   ├── Web Scraping notebook.ipynb              # Wikipedia HTML table scraping
 │   ├── Data wrangling.ipynb                     # Cleaning & labelling training data
@@ -23,7 +23,7 @@ Capstone-main/
 │   ├── folium.ipynb                             # Geospatial analysis with Folium
 │   └── SpaceX_Machine Learning Prediction_Part_5.ipynb  # Model training & evaluation
 │
-├── 📁 csv/
+├── csv/
 │   ├── dataset_part_1.csv                       # Raw API data
 │   ├── dataset_part_2.csv                       # Cleaned data with class labels
 │   ├── dataset_part_3.csv                       # Feature-engineered data for ML
@@ -36,7 +36,7 @@ Capstone-main/
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 ### 1. Data Collection
 - **SpaceX REST API** (`/launches/v4/`) — Pulled structured launch records including payload mass, orbit, booster version, and landing outcomes.
@@ -65,7 +65,7 @@ Capstone-main/
 
 ---
 
-## 📊 Key Results
+## Results
 
 | Model | CV Accuracy | Test Accuracy |
 |---|---|---|
@@ -85,7 +85,7 @@ Capstone-main/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Tools |
 |---|---|
@@ -100,7 +100,7 @@ Capstone-main/
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Prerequisites
 ```bash
@@ -145,18 +145,18 @@ Open notebooks in the following order for end-to-end reproducibility:
 
 ---
 
-## 📈 Dashboard Features
+## Features
 
 | Feature | Description |
 |---|---|
-| 🔽 Site Dropdown | Filter by launch site (All Sites / individual sites) |
-| 🥧 Pie Chart | Success vs. failure distribution for selected site |
-| 🎚️ Payload Slider | Filter scatter plot by payload range (0 – 10,000 kg) |
-| 💬 Scatter Plot | Payload mass vs. landing outcome, coloured by booster version |
+| Site Dropdown | Filter by launch site (All Sites / individual sites) |
+| Pie Chart | Success vs. failure distribution for selected site |
+| Payload Slider | Filter scatter plot by payload range (0 – 10,000 kg) |
+| Scatter Plot | Payload mass vs. landing outcome, coloured by booster version |
 
 ---
 
-## 🧠 ML Pipeline Summary
+## ML Pipeline Summary
 
 ```python
 # Preprocessing
@@ -174,7 +174,7 @@ accuracy = grid_search.score(X_test, Y_test)
 
 ---
 
-## 🌐 Data Sources
+## Sources
 
 - [SpaceX REST API v4](https://api.spacexdata.com/v4/launches)
 - [Wikipedia — List of Falcon 9 and Falcon Heavy launches](https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches)
@@ -182,14 +182,8 @@ accuracy = grid_search.score(X_test, Y_test)
 
 ---
 
-## 👤 Author
+## Author
 
 **Harish M**
 - B.E. Electrical & Electronics Engineering | Easwari Engineering College
 - Data Science Capstone Project
-
----
-
-## 📄 License
-
-This project is for educational purposes as part of the Data Science program.
